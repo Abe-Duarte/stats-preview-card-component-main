@@ -21,6 +21,10 @@ a {
     background-color: hsl(244, 38%, 16%);
 }
 
+#keyword {
+    color: hsl(277, 64%, 61%);
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -35,10 +39,27 @@ footer {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        border-radius: 10px
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .card-img {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url('./images/image-header-mobile.jpg');
+        height: 100%;
+        width: 100%;
+    }
+
+    .header {
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     footer p, a {
         font-size: 0.9rem;
+        text-align: center;
     }
 }
